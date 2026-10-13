@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ungkapan Hatiku Untukmu</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: #d63384;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 3px solid #ff69b4;
+    }
+    .container {
+      margin-top: 40px;
+    }
+    .card {
+      background-color: #fff0f5;
+      border: 2px solid #ff69b4;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 400px;
+      box-shadow: 0 0 10px #ffb6c1;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #d63384;
+    }
+    footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #c71585;
+    }
+    .rose {
+      width: 50px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>🌹 Ungkapan Hatiku Untukmu 🌹</header>
+
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Rose_flower.png" class="rose" alt="Mawar">
+    <h2>Bolehkah aku mengatakan sesuatu?</h2>
+    <button onclick="nextStep()">Ayo Lanjut 💌</button>
+
+    <div id="content" style="display:none;">
+      <div class="card">
+        <h3>Hal yang kusukai darimu 💖</h3>
+        <p id="likeText">Klik untuk melihat...</p>
+        <button onclick="revealLove()">Tap to Reveal</button>
+      </div>
+
+      <div class="card">
+        <h3>Kenapa aku jatuh cinta padamu 💕</h3>
+        <p id="reasonText">Klik untuk tahu alasannya...</p>
+        <button onclick="showReason()">Find Out</button>
+      </div>
+
+      <div class="card">
+        <h3>Impian bersamamu 🌸</h3>
+        <p id="dreamText">Klik untuk melihat impianku...</p>
+        <button onclick="showDream()">Our Future?</button>
+      </div>
+
+  <footer>Apapun jawabanmu, kamu tetap spesial bagiku 💗</footer>
+
+  <script>
+    function nextStep() {
+      document.getElementById('content').style.display = 'block';
+    }
+    function revealLove() {
+      document.getElementById('likeText').innerText = 'Senyummu selalu membuat hariku lebih indah 🌷';
+    }
+    function showReason() {
+      document.getElementById('reasonText').innerText = 'Karena kamu adalah alasan aku percaya pada cinta sejati 💞';
+    }
+    function showDream() {
+      document.getElementById('dreamText').innerText = 'Aku ingin menatap senja bersamamu setiap sore 🌅';
+    }
+  </script>
+</body>
+</html>
